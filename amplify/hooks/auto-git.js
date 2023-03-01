@@ -57,5 +57,7 @@ async function handler(event) {
   }
 }
 
-const event = getParameters()
-handler(event)
+export function autogit() {
+  const event = getParameters()
+  handler(event)
+}

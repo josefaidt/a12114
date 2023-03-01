@@ -45,6 +45,16 @@ async function handler(event) {
   // console.log({ data, stage, error })
   const message = `${stage} ${command}`
   await run(`git add .; git commit -m "${message}"`)
+  try {
+    await run(`git add .; git commit -m "${message}"`)
+  } catch (error) {
+    if (error.message.includes('nothing to commit')) {
+      console.log('Nothing to commit')
+    } else {
+      console.error(error)
+      process.exit(1)
+    }
+  }
 }
 
 const event = getParameters()
