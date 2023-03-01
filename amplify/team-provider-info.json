@@ -17,9 +17,9 @@
           "myvar": "myvalue",
           "anotherone": "anothervalue",
           "anotheranother": "asdf",
-          "asdf": "asdf",
           "deploymentBucketName": "amplify-a12114-dev-115549-deployment",
-          "s3Key": "amplify-builds/a1211486eff962-6c6462474a6470564c5a-build.zip"
+          "s3Key": "amplify-builds/a1211486eff962-6c6462474a6470564c5a-build.zip",
+          "asdf": "asdf"
         },
         "a1211408a68fe6": {
           "deploymentBucketName": "amplify-a12114-dev-115549-deployment",
