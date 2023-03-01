@@ -13,22 +13,6 @@
     }
   },
   "parameters": {
-    "AMPLIFY_function_a1211408a68fe6_deploymentBucketName": {
-      "usedBy": [
-        {
-          "category": "function",
-          "resourceName": "a1211408a68fe6"
-        }
-      ]
-    },
-    "AMPLIFY_function_a1211408a68fe6_s3Key": {
-      "usedBy": [
-        {
-          "category": "function",
-          "resourceName": "a1211408a68fe6"
-        }
-      ]
-    },
     "AMPLIFY_function_a1211486eff962_anotheranother": {
       "usedBy": [
         {
