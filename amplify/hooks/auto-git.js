@@ -36,11 +36,16 @@ function getParameters() {
 
 /**
  * @param {HookEvent} event
+ * @param {HookContext} context
  */
-async function handler(event) {
+async function handler(event, context) {
   const { data, error } = event
+  if (error) {
+    console.error(error)
+    process.exit(1)
+  }
   const { command } = data.amplify
-  const stage = getLifecycleStage(event.url)
+  const stage = getLifecycleStage(context.url)
   // console.log({ data, stage, error })
   const message = `${stage} ${command}`
   try {
@@ -57,6 +62,5 @@ async function handler(event) {
 
 export function autogit(lifecycleEventFileURL) {
   const event = getParameters()
-  event.url = lifecycleEventFileURL
-  handler(event)
+  handler(event, { url: lifecycleEventFileURL })
 }

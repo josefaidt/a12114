@@ -22,3 +22,7 @@ type HookEvent = {
 }
 
 type HookStage = 'pre' | 'post'
+
+type HookContext = {
+  url: string
+}
