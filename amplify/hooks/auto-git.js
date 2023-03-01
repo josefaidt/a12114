@@ -3,11 +3,10 @@ import * as path from 'node:path'
 import { exec } from 'node:child_process'
 
 function run(command) {
-  const [cmd, ...args] = command.split(' ')
   return new Promise((resolve, reject) => {
     const child = exec(command, (error, stdout, stderr) => {
       if (error) {
-        reject(error)
+        reject(new Error(error, { cause: stdout }))
       } else {
         resolve({ stdout, stderr })
       }
@@ -47,7 +46,7 @@ async function handler(event) {
   try {
     await run(`git add .; git commit -m "${message}"`)
   } catch (error) {
-    console.log('error is', error)
+    console.log('error is', error, error.cause)
     if (error.message.includes('nothing to commit')) {
       console.log('Nothing to commit')
     } else {
