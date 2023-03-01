@@ -46,9 +46,8 @@ async function handler(event) {
   try {
     await run(`git add .; git commit -m "${message}"`)
   } catch (error) {
-    console.log('error is', error, error.cause)
-    if (error.message.includes('nothing to commit')) {
-      console.log('Nothing to commit')
+    if (error.cause.includes('nothing to commit')) {
+      console.log('[autogit] Skipping, nothing to commit')
     } else {
       console.error(error)
       process.exit(1)
