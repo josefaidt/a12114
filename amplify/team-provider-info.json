@@ -14,9 +14,6 @@
     "categories": {
       "function": {
         "a1211486eff962": {
-          "myvar": "myvalue",
-          "anotherone": "anothervalue",
-          "anotheranother": "asdf",
           "deploymentBucketName": "amplify-a12114-dev-115549-deployment",
           "s3Key": "amplify-builds/a1211486eff962-6c6462474a6470564c5a-build.zip",
           "asdf": "asdf"
