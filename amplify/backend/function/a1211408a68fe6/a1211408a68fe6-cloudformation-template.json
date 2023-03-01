@@ -15,18 +15,6 @@
     },
     "s3Key": {
       "Type": "String"
-    },
-    "myvar": {
-      "Type": "String"
-    },
-    "anotherone": {
-      "Type": "String"
-    },
-    "anotheranother": {
-      "Type": "String"
-    },
-    "asdf": {
-      "Type": "String"
     }
   },
   "Conditions": {
@@ -59,12 +47,12 @@
         "FunctionName": {
           "Fn::If": [
             "ShouldNotCreateEnvResources",
-            "a1211486eff962",
+            "a1211408a68fe6",
             {
               "Fn::Join": [
                 "",
                 [
-                  "a1211486eff962",
+                  "a1211408a68fe6",
                   "-",
                   {
                     "Ref": "env"
@@ -81,18 +69,6 @@
             },
             "REGION": {
               "Ref": "AWS::Region"
-            },
-            "myvar": {
-              "Ref": "myvar"
-            },
-            "anotherone": {
-              "Ref": "anotherone"
-            },
-            "anotheranother": {
-              "Ref": "anotheranother"
-            },
-            "asdf": {
-              "Ref": "asdf"
             }
           }
         },
@@ -113,12 +89,12 @@
         "RoleName": {
           "Fn::If": [
             "ShouldNotCreateEnvResources",
-            "a12114LambdaRole39ed1fc6",
+            "a12114LambdaRoled0053c41",
             {
               "Fn::Join": [
                 "",
                 [
-                  "a12114LambdaRole39ed1fc6",
+                  "a12114LambdaRoled0053c41",
                   "-",
                   {
                     "Ref": "env"
