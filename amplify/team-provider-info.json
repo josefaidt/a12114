@@ -21,7 +21,10 @@
           "deploymentBucketName": "amplify-a12114-dev-115549-deployment",
           "s3Key": "amplify-builds/a1211486eff962-6c6462474a6470564c5a-build.zip"
         },
-        "a1211408a68fe6": {}
+        "a1211408a68fe6": {
+          "deploymentBucketName": "amplify-a12114-dev-115549-deployment",
+          "s3Key": "amplify-builds/a1211408a68fe6-30476d783358524c7959-build.zip"
+        }
       }
     }
   },
