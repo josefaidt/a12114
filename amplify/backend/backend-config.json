@@ -32,7 +32,23 @@
         }
       ]
     },
+    "AMPLIFY_function_a1211486eff962_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "a1211486eff962"
+        }
+      ]
+    },
     "AMPLIFY_function_a1211486eff962_myvar": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "a1211486eff962"
+        }
+      ]
+    },
+    "AMPLIFY_function_a1211486eff962_s3Key": {
       "usedBy": [
         {
           "category": "function",
