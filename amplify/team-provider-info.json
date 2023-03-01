@@ -43,7 +43,7 @@
           "anotherone": "anothervalue",
           "anotheranother": "asdf",
           "asdf": "asdf",
-          "deploymentBucketName": "amplify-a12114-dev-115549-deployment",
+          "deploymentBucketName": "amplify-a12114-next-120055-deployment",
           "s3Key": "amplify-builds/a1211486eff962-6c6462474a6470564c5a-build.zip"
         }
       }
