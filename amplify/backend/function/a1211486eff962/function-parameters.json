@@ -2,18 +2,6 @@
   "lambdaLayers": [],
   "environmentVariableList": [
     {
-      "cloudFormationParameterName": "myvar",
-      "environmentVariableName": "myvar"
-    },
-    {
-      "cloudFormationParameterName": "anotherone",
-      "environmentVariableName": "anotherone"
-    },
-    {
-      "cloudFormationParameterName": "anotheranother",
-      "environmentVariableName": "anotheranother"
-    },
-    {
       "cloudFormationParameterName": "asdf",
       "environmentVariableName": "asdf"
     }
