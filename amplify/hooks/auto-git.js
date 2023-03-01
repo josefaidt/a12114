@@ -44,7 +44,6 @@ async function handler(event) {
   const stage = getLifecycleStage()
   // console.log({ data, stage, error })
   const message = `${stage} ${command}`
-  await run(`git add .; git commit -m "${message}"`)
   try {
     await run(`git add .; git commit -m "${message}"`)
   } catch (error) {
