@@ -29,22 +29,7 @@
         }
       ]
     },
-    "AMPLIFY_function_a1211486eff962_anotheranother": {
-      "usedBy": [
-        {
-          "category": "function",
-          "resourceName": "a1211486eff962"
-        }
-      ]
-    },
-    "AMPLIFY_function_a1211486eff962_anotherone": {
-      "usedBy": [
-        {
-          "category": "function",
-          "resourceName": "a1211486eff962"
-        }
-      ]
-    },
+
     "AMPLIFY_function_a1211486eff962_asdf": {
       "usedBy": [
         {
@@ -61,14 +46,7 @@
         }
       ]
     },
-    "AMPLIFY_function_a1211486eff962_myvar": {
-      "usedBy": [
-        {
-          "category": "function",
-          "resourceName": "a1211486eff962"
-        }
-      ]
-    },
+
     "AMPLIFY_function_a1211486eff962_s3Key": {
       "usedBy": [
         {
