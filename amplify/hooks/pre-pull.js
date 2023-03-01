@@ -1,2 +1,2 @@
 import { autogit } from './auto-git.js'
-autogit()
+autogit(import.meta.url)

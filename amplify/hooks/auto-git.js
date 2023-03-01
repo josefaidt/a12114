@@ -20,8 +20,8 @@ function run(command) {
  * Get the lifecycle stage from the filename
  * @returns {HookStage}
  */
-function getLifecycleStage() {
-  const url = new URL(import.meta.url)
+function getLifecycleStage(lifecycleEventFileURL = import.meta.url) {
+  const url = new URL(lifecycleEventFileURL)
   const filename = path.basename(url.pathname, '.js')
   const [stage] = filename.split('-')
   return stage
@@ -40,7 +40,7 @@ function getParameters() {
 async function handler(event) {
   const { data, error } = event
   const { command } = data.amplify
-  const stage = getLifecycleStage()
+  const stage = getLifecycleStage(event.url)
   // console.log({ data, stage, error })
   const message = `${stage} ${command}`
   try {
@@ -55,7 +55,8 @@ async function handler(event) {
   }
 }
 
-export function autogit() {
+export function autogit(lifecycleEventFileURL) {
   const event = getParameters()
+  event.url = lifecycleEventFileURL
   handler(event)
 }
