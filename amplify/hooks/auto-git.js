@@ -41,8 +41,10 @@ function getParameters() {
 async function handler(event, context) {
   const { data, error } = event
   if (error) {
-    console.error(error)
-    process.exit(1)
+    console.warn(
+      '[autogit] an error occurred, but updates will still be committed'
+    )
+    // process.exit(1)
   }
   const { command } = data.amplify
   const stage = getLifecycleStage(context.url)
