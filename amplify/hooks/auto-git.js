@@ -48,6 +48,7 @@ async function handler(event) {
   try {
     await run(`git add .; git commit -m "${message}"`)
   } catch (error) {
+    console.log('error is', error)
     if (error.message.includes('nothing to commit')) {
       console.log('Nothing to commit')
     } else {
