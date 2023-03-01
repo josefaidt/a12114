@@ -16,15 +16,6 @@
     "s3Key": {
       "Type": "String"
     },
-    "myvar": {
-      "Type": "String"
-    },
-    "anotherone": {
-      "Type": "String"
-    },
-    "anotheranother": {
-      "Type": "String"
-    },
     "asdf": {
       "Type": "String"
     }
@@ -81,15 +72,6 @@
             },
             "REGION": {
               "Ref": "AWS::Region"
-            },
-            "myvar": {
-              "Ref": "myvar"
-            },
-            "anotherone": {
-              "Ref": "anotherone"
-            },
-            "anotheranother": {
-              "Ref": "anotheranother"
             },
             "asdf": {
               "Ref": "asdf"
